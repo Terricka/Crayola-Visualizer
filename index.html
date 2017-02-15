@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="p5.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+<!--
+    <div id="controls">
+
+
+      <div id="brush-control">
+        <p>Brush</p>
+        <input id="brush-size" type="range" min="30.0"
+                max="160.0" step="1" value="120" >
+        <span id="brush">120</span>
+      </div>
+
+      <p id="color-name">Select a color</p>
+      <div id="current-color">
+
+      </div>
+    </div> -->
+
+
+
+
+  <script>
+    $("#brush-size").on("change", function() {
+      var brushOutput = this.value;
+      $("#brush").text(brushOutput);
+    });
+
+  </script>
+</body>
+</html>

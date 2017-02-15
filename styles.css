@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Pixels;
+    src: url("PixelOperator.ttf");
+}
+
+body {
+  padding:0 !important;
+  margin:0;
+  position:relative;
+  font-family:"Pixels";
+  overflow:scroll;
+  height:100vh;
+}
+
+#color-list {
+  position:fixed;
+  left:0;
+  top:0vh;
+  width:100vw;
+  height:100vh;
+  background:#fff;
+  z-index:99999;
+  overflow:hidden;
+  font-size:.8em;
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+
+#color-list p {
+  margin:.25px;
+  width:10px;
+  height:10px;
+  display:inline-block;
+  cursor:pointer;
+}
+
+canvas {
+  z-index:1;
+  position:relative;
+  float:right;
+  top:0;
+}
+
+.color-name {
+  text-transform: uppercase;
+}
+
+#current-color {
+  position:fixed;
+  left:0;
+  top:17vh;
+  height:5vh;
+  width:200px;
+  background:lightgrey;
+}
+
+#color-name {
+  position:relative;
+  top:15px;
+  left:0px;
+  font-size:5em;
+  text-transform: uppercase;
+  color:#EDEDED;
+}
+
+#color-bar {
+  height:25px;
+  width:100vw;
+  position:fixed;
+  left:0;
+  top:0vh;
+  z-index:999999 !Important;
+}
+
+input {
+  outline:none;
+  border:0px solid #000;
+  height:1px;
+  box-shadow: 0px 0px 0px #000000;
+  background:#000;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #000;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.hovered {
+  display:none;
+  text-transform: uppercase;
+}
+
+.color:hover > .hovered {
+  display:block;
+  text-align:left;
+  width:100vw;
+  height:10px;
+  z-inex:88888;
+  position:fixed;
+  background:#fff;
+  padding-left:15px;
+  padding-top:5px;
+  text-transform: uppercase;
+  font-weight:500;
+  margin-left:50px;
+  height:50px;
+  font-size:4em;
+}
+
+#color-list p:hover {
+  width:55px;
+  height:55px;
+  z-index:99999 !important;
+  position: fixed;
+}
